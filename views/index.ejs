@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Data Page</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Country</th>
+            <th>Language</th>
+        </tr>
+        <% data.forEach(function(item) { %>
+            <tr>
+                <td>
+                    <%= item.time %>
+                </td>
+                <td>
+                    <%= item.country %>
+                </td>
+                <td>
+                    <%= item.language %>
+                </td>
+            </tr>
+            <% }); %>
+    </table>
+</body>
+
+</html>
